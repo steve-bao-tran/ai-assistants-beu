@@ -1,0 +1,23 @@
+handler: competitions/server.handler
+events:
+  - http:
+      path: competitions
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+  - http:
+      path: competitions/{proxy+}
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+      
+  - http:
+      path: admin/competitions
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+  - http:
+      path: admin/competitions/{proxy+}
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}

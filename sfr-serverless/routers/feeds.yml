@@ -1,0 +1,55 @@
+handler: feeds/server.handler
+events:
+  - http:
+      path: reposts/{proxy+}
+      method: POST
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+
+  - http:
+      path: feeds
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+  - http:
+      path: feeds/{proxy+}
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+  - http:
+      path: public/feeds/{proxy+}
+      method: ANY
+      cors: ${self:custom.cors}
+
+  - http:
+      path: admin/feeds
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+  - http:
+      path: admin/feeds/{proxy+}
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+
+  - http:
+      path: admin/report-posts
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+  - http:
+      path: admin/report-posts/{proxy+}
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+
+  - http:
+      path: admin/report-categories
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
+  - http:
+      path: admin/report-categories/{proxy+}
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}

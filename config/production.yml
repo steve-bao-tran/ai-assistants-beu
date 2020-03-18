@@ -1,0 +1,21 @@
+environment:
+  NODE_ENV: ${env:NODE_ENV}
+  FIREBASE_CLIENT_EMAIL: "firebase-adminsdk-0hpkv@soundfyr-90db6.iam.gserviceaccount.com"
+  FIREBASE_PRIVATE_KEY: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDC6HBrhG5Itb+m\nS2iNwVoeU9uWwuH/6XdIywwjS1TCh3jZdqSvnK8gqKpVi9srNZOc1U94hBwRchsf\nbi6Gn7BHHN/dc8a3Ipg++pH95/1hecko8b/sQrwfmsX8SHLf/Ezcu06xaLCyKxRp\nvZAoO6St1Xn0JezJ/8TA6E/CK1NWKEn40DQbfBf7DeFdGQUv6lQEmMYHZQ0ftr8m\njU1276dbkJnaxb0qefmotz9zKaQtRqLdQnYhBLYCF+z3IqeLBE7yzlJf6OXPs+Hu\nH0uusFnja5B2XAwBWvtNMDO1UO1WR8dLgXSPKlvYEX66x+EYFWw7BrD3r/6m0mbZ\ny5Z2lZZZAgMBAAECggEAH7XeeHeq07SSMjWJlKqVBWMiUlRxnYe36wVx+5oJd76/\nuC233IRy767RS6q95TlJw1XnIJXp1SLJ6+Kquidn8CHwACESfwAnYfO1ZehlDoNY\naYtvbLpszf2J4aJN4kgznyPwSSfdu5cLsqpvNkSB5fBZ75FuBW1R7wq80zvmSplp\nYNU97T/Rv0GAxoDT9JP1mvBJ9cPGFKDoqu3GI3L3AIgTAt/fJDU5kYJSURRSnGB5\nG7XUkUgo1wSBAOqUEnj37oErFCpH0jtRpYBt/xAZgZqivu8L6dY7Ef9g7wSnGrQd\nk/HHnU9ykdXW5I6wyjGg+LcurzbQ6gBjkdkBfPdjUwKBgQD3r+w7hphvCFD6CunL\nSgLsglrlAPx3kotF43515tteauoF1BOIV94PK46cQdwC+CYeRvMBOKfJhRTtbn+g\nwSzgpEaZqmuCCeLzabKK4zx86/GlDEAqQRlcAcW1t4eGW+0NWrMeC07fP+JuZ3BQ\nEFLshFAPttckGHNUGRJdzcTmjwKBgQDJcwxQAw/7Of3iXOoIOZQiqhBV7OerZv7C\n17ORmytJfgpDnrbdIGQA5WLXI6aLO/GUdwcS3+sRgaxcHaYo9u4fPpj4YsTUePJe\nIRJ6VuJ/KDxjHJBIcSFFlw8KxdfBxdpE9ywCVgWgQ/9Egy3CAyC+ZNmHqWt//DHs\nAg0dMYDolwKBgBioDqAuWeZTsZvykiuGhpv8rge1/Wv5zpt6dhBOlu/jPMCvx/H+\nrUBdWaj8dWZmRYUmEvLALRPGh7rLETFziYAjWlPZvzIGwezxTLC+xjq5UijX+1s5\nd8jM9F2Ok5Mwe3yk1sfa4FMhDO1opqmRtm+NDFtEHE6fkHuCs21bGorJAoGARZwh\npwxH23HgjvW4UPtEeu31Exv3ubyvT7ilbi0GOjD5bwBLBAILTFv3WYwSIo6mHb07\njoQdgEEkw/fi0Mjy440H4tyOUzUv2uLmtauMPJA0vbLDEKU28AsQwZI3ydeKYsZe\nSLhc3VJhxNTnXOEj0Wab3ErowKLuxTS4P1w5xSUCgYEA2MZ1IkJyLsmj98bgtmkT\nl6kAfm910dbYj6v0K8O1aOyN2iI3UTgMkUnkFUZp4ZfG2DkmBVFFUh7CrtTwxtsY\n9HpdhzETv/vGjU9FVZJj3AT0DAuRpRLp+bUPMMOfZF5N2HyDLL5DAbSVNXYef1tz\n6Yg2O/SVPnB72jlLQPVQxo8=\n-----END PRIVATE KEY-----\n"
+  FIREBASE_PROJECT_ID: "soundfyr-90db6"
+  MONGODB_URL: "mongodb://admin:J52lPQzXVmD3rYpg@10.0.5.104/soundfyr"
+  LINK_USER_WEB: "https://soundfyr.com"
+  ONE_SIGNAL_APP_ID: "ffed5f7f-e919-4fed-a7df-63fc81688c7f"
+  ONE_SIGNAL_API_KEY: "NWJkMmRjOWEtOTA5My00Mzk0LWExMDMtZDczZGRlMWE2NmJk"
+  APP_NAME: "SoundFyr"
+  GMAIL_USER: "soundfyr.dev@gmail.com"
+  GMAIL_PASS: "User@2018"
+  EMAIL: "signup@soundfyr.com"
+
+vpc:
+  securityGroupIds:
+    - sg-09570895febe0c720
+  subnetIds:
+    - subnet-00ec01d9f4479117c
+    - subnet-09c8c177545d01063
+ 

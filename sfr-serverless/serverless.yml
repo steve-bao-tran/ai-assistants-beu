@@ -1,0 +1,39 @@
+service: soundfyr
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  environment: ${file(../config/${env:NODE_ENV}.yml):environment}
+  stage: ${env:NODE_ENV}
+  region: ap-southeast-1
+  vpc: ${file(../config/${env:NODE_ENV}.yml):vpc}
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
+custom: 
+  authorizer: 
+    name: authorizer
+    resultTtlInSeconds: 0
+    identitySource: method.request.header.Authorization
+    type: token
+  cors: 
+    origin: '*'
+    headers:
+      - Content-Type
+      - X-Amz-Date
+      - Authorization
+      - X-Api-Key
+      - X-Amz-Security-Token
+      - X-Amz-User-Agent
+      - Accept-Encoding
+      - Content-Encoding
+ 
+functions:
+  authorizer:
+    handler: authorizer/handler.authorize
+  users: ${file(./routers/users.yml)}
+  competitions: ${file(./routers/competitions.yml)}
+  globals: ${file(./routers/globals.yml)}
+  feeds: ${file(./routers/feeds.yml)}

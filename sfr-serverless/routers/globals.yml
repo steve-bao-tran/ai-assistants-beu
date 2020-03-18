@@ -1,0 +1,32 @@
+handler: globals/server.handler
+events:
+  - http:
+      path: globals/settings
+      method: GET
+      cors: ${self:custom.cors}
+  - http:
+      path: globals/users
+      method: ANY
+      cors: ${self:custom.cors}
+  - http:
+      path: globals/users/{proxy+}
+      method: ANY
+      cors: ${self:custom.cors}
+  - http:
+      path: globals/urlcontent
+      method: ANY
+      cors: ${self:custom.cors}
+  - http:
+      path: globals/zombie
+      method: ANY
+      cors: ${self:custom.cors}
+  - http:
+      path: admin/notifications
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}  
+  - http:
+      path: globals/configurations
+      method: ANY
+      cors: ${self:custom.cors}
+      authorizer: ${self:custom.authorizer}
