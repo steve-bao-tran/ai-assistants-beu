@@ -27,7 +27,7 @@
     "firebase-admin": "^6.1.0",
     "joi": "^14.0.4",
     "joi-date-extensions": "^1.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "mocha": "^5.2.0",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.23",
