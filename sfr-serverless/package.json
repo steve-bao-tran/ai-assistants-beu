@@ -31,7 +31,7 @@
     "mocha": "^5.2.0",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.23",
-    "mongoose": "^5.3.10",
+    "mongoose": "^5.7.5",
     "nodemailer": "^5.0.0",
     "serverless-http": "^1.8.0"
   },
