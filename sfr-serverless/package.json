@@ -22,7 +22,7 @@
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "firebase": "^5.7.0",
     "firebase-admin": "^6.1.0",
     "joi": "^14.0.4",
